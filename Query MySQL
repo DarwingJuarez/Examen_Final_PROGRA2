@@ -1,0 +1,55 @@
+
+create database if not exists examenfinal;
+use  examenfinal;
+
+
+/*create table if not exists inventari
+(
+	idinventario int primary key,
+    fecha_inicio date not null,
+    idproducto int not null,
+    fecha_fin date not null
+);*/
+
+/*create table if not exists producto
+(
+	idproducto int primary key,
+    nombre_producto varchar(100) not null,
+    stock_inicial int not null,
+    entradas int not null,
+    salidas int not null,
+    total int not null
+)
+select * from producto;*/
+
+
+
+/*create table if not exists producto
+(
+	idproducto int primary key,
+    nombre_producto varchar(100) not null,
+    stock_inicial int not null,
+    entradas int not null,
+    salidas int not null,
+    total int not null
+); 
+insert into producto values(2,"Huevos",70,70,130,10);*/
+create table if not exists inventari
+(
+	idinventario int primary key,
+    fecha_inicio date not null,
+    idproducto int not null,
+    fecha_fin date not null
+);
+create table if not exists producto
+(
+	idproducto int primary key,
+    nombre_producto varchar(100) not null,
+    stock_inicial int not null,
+    entradas int not null,
+    salidas int not null,
+    total int not null
+); 
+insert into producto values(2,"Huevos",70,70,130,10),(1,"TV",70,70,130,10),(3,"Pepsi",120,80,200,0);
+select * from producto;
+select * from inventari;
